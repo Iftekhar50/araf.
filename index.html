@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Iftekhar Chowdhury Araf</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Anek+Bangla:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--bg2:#050D14;--card:#08131C;--text:#D7EBF8;--head:#E3F5FF;--muted:#8BA6B8;--line:#12344A;--blue:#38BDF8;--chip:#0B2A3E;--chipt:#BAE6FD;--ac:#7DD3FC;--grad:linear-gradient(135deg,#7DD3FC,#38BDF8);--font:Poppins,system-ui,sans-serif}
+[data-theme=light]{--bg:#F4FBFF;--bg2:#E3F4FE;--card:#fff;--text:#1F2937;--head:#1F2937;--muted:#64748B;--line:#DCEBF7;--blue:#38BDF8;--chip:#E0F2FE;--chipt:#0369A1;--ac:#0284C7}
+[lang=bn]{--font:'Anek Bangla',Poppins,system-ui,sans-serif}
+html[lang=bn] .e,html:not([lang=bn]) .b{display:none}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:84px;scroll-behavior:smooth}
+[data-theme=dark] body{background:radial-gradient(ellipse at 70% -10%,rgba(56,189,248,.22),transparent 55%) no-repeat #000}
+[data-theme=light] body{background:linear-gradient(#D6EFFD,#F4FBFF 560px) no-repeat #F4FBFF}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+h1,h2,h3{line-height:1.2;color:var(--head)}
+svg{display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;color:inherit}
+.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar,main{max-width:1100px;margin:0 auto;padding:0 20px}
+.bar{padding:14px 20px;display:flex;justify-content:flex-end;gap:10px}
+.ib{min-width:48px;height:48px;border:1px solid var(--line);border-radius:14px;background:var(--card);padding:0 12px;font-weight:700}
+.hero{padding:56px 0 72px;display:flex;flex-direction:column}
+h1{font-weight:800;font-size:clamp(2.9rem,14vw,7rem);line-height:1.1;margin-bottom:20px;letter-spacing:-.02em;white-space:pre-line}
+[lang=bn] h1{font-size:clamp(3.8rem,17vw,7.5rem);letter-spacing:0}
+.lead{color:var(--muted);font-weight:500;font-size:1.1rem;max-width:56ch}
+.pill{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:14px;align-self:flex-start;margin-bottom:26px;padding:10px 22px 10px 12px;border-radius:99px;background:var(--grad);color:#0C4A6E;box-shadow:0 10px 26px rgba(56,189,248,.35)}
+.pill::after{content:'';position:absolute;inset:0 auto 0 0;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:translateX(-160%) skewX(-20deg);animation:shine 3.5s ease-in-out 1s infinite}
+.pill>:last-child{font-size:1.5rem;font-weight:700;animation:nudge 1.6s ease-in-out infinite}
+.pill b{display:block;font-size:1.2rem;font-weight:800;white-space:pre-line;line-height:1.25}
+.pill small{display:block;font-size:.8rem;opacity:.85}
+.row{display:flex}
+.row svg{width:42px;height:42px;margin-left:-9px;background:#fff;border-radius:50%;padding:6px;border:2px solid var(--line)}
+.row svg:first-child{margin-left:0}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{flex:1 1 160px;display:flex;align-items:center;justify-content:center;min-height:56px;padding:12px 26px;border-radius:16px;font-weight:700;border:1.5px solid var(--blue);background:none;color:var(--head)}
+.btn.f{background:var(--grad);color:#0C4A6E}
+section{padding:72px 0}
+.view{display:none;max-width:1100px;margin:0 auto;padding:56px 20px 72px;animation:up .5s ease both}
+body.s #home{display:none}
+body.s #social{display:block}
+.back{display:none;margin-right:auto;align-items:center;gap:8px;min-height:48px;padding:0 20px;border-radius:99px;font-weight:700;white-space:nowrap;color:#0C4A6E;background:var(--grad);box-shadow:0 6px 16px rgba(56,189,248,.3)}
+body.s .back{display:inline-flex}
+.alt{background:var(--bg2);box-shadow:0 0 0 100vmax var(--bg2);clip-path:inset(0 -100vmax)}
+.ey{display:block;color:var(--ac);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin-bottom:10px}
+h2{font-weight:800;font-size:clamp(1.9rem,5vw,2.7rem)}
+.sub{color:var(--muted);margin:8px 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.card p{color:var(--muted)}
+.card h3{font-size:1.1rem;margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.tags span{background:var(--chip);color:var(--chipt);font-weight:600;font-size:.9rem;padding:8px 16px;border-radius:99px}
+.kv small{display:block;color:var(--muted);font-weight:500}
+.kv b{display:block;font-size:1.15rem;color:var(--head)}
+.big b{font-size:2.4rem;font-weight:800;color:var(--ac)}
+.ico{width:46px;height:46px;border-radius:14px;background:var(--chip);color:var(--chipt);display:grid;place-items:center;margin-bottom:14px}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:32px 20px 40px;border-top:1px solid var(--line)}
+.socg{display:grid;gap:16px;max-width:640px}
+.soc{display:flex;align-items:center;gap:18px;padding:22px;border-radius:20px;background:var(--card);border:1px solid var(--line)}
+.soc svg{width:56px;height:56px;flex:none}
+.soc b{display:block;font-size:1.15rem;color:var(--head)}.soc small{color:var(--muted);word-break:break-all}
+.soc i{margin-left:auto;color:var(--ac);font:700 1.5rem var(--font)}
+@keyframes shine{0%{transform:translateX(-160%) skewX(-20deg)}60%,100%{transform:translateX(420%) skewX(-20deg)}}
+@keyframes nudge{50%{transform:translateX(6px)}}
+@keyframes slide{from{opacity:0;transform:translateX(-36px)}}
+@keyframes pop{from{opacity:0;transform:scale(.5) rotate(-12deg)}}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+.hero>*,.card,.soc{animation:up .6s ease both}
+.card,.soc,.btn,.pill,.ib,.tags span{transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s,border-color .3s,background .3s}
+.card,.soc{cursor:pointer;box-shadow:0 2px 10px rgba(56,189,248,.1)}
+.card:hover,.soc:hover,.pill:hover,.btn:hover{transform:translateY(-4px);border-color:var(--blue)}
+.card.up{transform:translateY(-8px);box-shadow:0 12px 24px rgba(56,189,248,.28);border-color:var(--blue)}
+.tags span:hover{transform:translateY(-2px)}
+.ib:hover{transform:scale(1.06)}
+.btn:active,.pill:active,.ib:active,.soc:active{transform:scale(.96)}
+#social .soc{animation:slide .7s cubic-bezier(.22,1,.36,1) both}
+#social .soc:nth-child(2){animation-delay:.12s}#social .soc:nth-child(3){animation-delay:.24s}
+#social .soc svg{animation:pop .7s cubic-bezier(.34,1.56,.64,1) .25s both;transition:transform .3s}
+#social .soc:hover svg{transform:scale(1.12) rotate(-6deg)}
+#social .soc:hover i{transform:translateX(6px)}.soc i{transition:transform .3s}
+@media(hover:none){.card:hover,.soc:hover,.pill:hover,.btn:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+#toast{position:fixed;left:50%;bottom:28px;display:flex;align-items:center;gap:10px;overflow:hidden;background:#15803D;color:#fff;padding:14px 24px;border-radius:99px;font-weight:600;z-index:9;max-width:calc(100vw - 32px);text-align:center;box-shadow:0 14px 34px rgba(21,128,61,.45);opacity:0;pointer-events:none;transform:translate(-50%,90px) scale(.8);transition:transform .55s cubic-bezier(.34,1.56,.64,1),opacity .3s}
+#toast.show{opacity:1;transform:translate(-50%,0) scale(1)}
+#toast::after{content:'';position:absolute;left:0;bottom:0;height:3px;width:100%;background:rgba(255,255,255,.75);transform-origin:left;transform:scaleX(0)}
+#toast.show::after{animation:bar 2.4s linear forwards}
+#toast svg{width:22px;height:22px;flex:none;stroke-dasharray:26;stroke-dashoffset:26}
+#toast.show svg{animation:draw .5s .2s ease forwards}
+@keyframes bar{to{transform:scaleX(1)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.cp{position:relative;overflow:visible;gap:0;transition:transform .3s cubic-bezier(.22,1,.36,1),background .35s,border-color .35s,color .35s,box-shadow .35s}
+.cp .lb{display:inline-flex;transition:opacity .25s,transform .35s cubic-bezier(.34,1.56,.64,1)}
+.cp .lb.d,.cp .ck{position:absolute;opacity:0}
+.cp .lb.d{transform:translateY(14px) scale(.7)}
+.cp .ck{width:26px;height:26px;left:20px;border-radius:50%;background:#fff;color:#15803D;display:grid;place-items:center;transform:scale(0) rotate(-90deg);transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .2s}
+.cp .ck svg{width:18px;height:18px;stroke-width:3.2}
+.cp.ok{background:linear-gradient(135deg,#22C55E,#15803D);border-color:#22C55E;color:#fff;box-shadow:0 0 0 0 rgba(34,197,94,.6),0 12px 28px rgba(34,197,94,.4);animation:bump .5s cubic-bezier(.34,1.56,.64,1)}
+.cp.ok .lb.n{opacity:0;transform:translateY(-14px) scale(.7)}
+.cp.ok .lb.d{opacity:1;transform:none;margin-left:34px}
+.cp.ok .ck{opacity:1;transform:scale(1) rotate(0)}
+.cp .ring{position:absolute;inset:0;border-radius:16px;border:2px solid #22C55E;pointer-events:none;animation:ring .8s ease-out forwards}
+.cp .cf{position:absolute;left:50%;top:50%;width:9px;height:9px;border-radius:2px;pointer-events:none;animation:cf .9s cubic-bezier(.12,.8,.3,1) forwards}
+@keyframes bump{0%{transform:scale(.9)}60%{transform:scale(1.07)}100%{transform:scale(1)}}
+@keyframes ring{from{opacity:.9;transform:scale(1)}to{opacity:0;transform:scale(1.35,1.9)}}
+@keyframes cf{from{opacity:1;transform:translate(-50%,-50%) scale(1)}to{opacity:0;transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y))) rotate(var(--r)) scale(.3)}}
+@media(min-width:1024px){.bar,main{max-width:1200px;padding-left:32px;padding-right:32px}section{padding:96px 0}.hero{padding:88px 0 104px}.grid{gap:24px}.card{padding:30px}}
+@media(max-width:820px){section{padding:56px 0}}
+@media(max-width:480px){.pill{gap:10px;padding:8px 16px 8px 10px}.row svg{width:36px;height:36px}.pill b{font-size:1.05rem}.pill small{font-size:.72rem}}
+@media(max-width:560px){.btn{flex-basis:100%}.bar{padding:12px 14px}.ib{min-width:44px;height:44px}}
+
+/* ===== Responsive: Mobile / Tablet / Desktop ===== */
+html{-webkit-text-size-adjust:100%}
+img,svg{max-width:100%}
+.bar{padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+footer{padding-bottom:max(40px,env(safe-area-inset-bottom))}
+#toast{bottom:max(28px,env(safe-area-inset-bottom))}
+/* Mobile (<=560px) */
+@media(max-width:560px){
+ main,.view{padding-left:16px;padding-right:16px}
+ .hero{padding:36px 0 52px}
+ h1{font-size:clamp(2.6rem,15vw,4rem);margin-bottom:16px}
+ [lang=bn] h1{font-size:clamp(3rem,17vw,4.6rem)}
+ .lead{font-size:1rem}
+ .pill{width:100%;justify-content:space-between;margin-bottom:20px}
+ .actions{gap:12px;margin-top:24px}
+ .btn{min-height:54px;flex-basis:100%}
+ section{padding:44px 0}
+ .card{padding:20px;border-radius:18px}
+ .grid,.g3{grid-template-columns:1fr;gap:14px}
+ .sub{margin-bottom:22px}
+ .soc{padding:16px;gap:14px}.soc svg{width:46px;height:46px}
+ #toast{width:calc(100vw - 32px);justify-content:center;font-size:.95rem;padding:13px 18px}
+ .cp .ck{left:14px}
+}
+/* Tablet (561-1023px) */
+@media(min-width:561px) and (max-width:1023px){
+ .grid,.g3{grid-template-columns:repeat(2,1fr)}
+ h1{font-size:clamp(4rem,11vw,6rem)}
+ .btn{flex:0 1 260px}
+ .pill{padding-right:28px}
+}
+/* Desktop (>=1024px) */
+@media(min-width:1024px){
+ .grid{grid-template-columns:repeat(4,1fr)}
+ .g3{grid-template-columns:repeat(3,1fr)}
+ .hero{padding:104px 0 120px}
+ h1{font-size:7.5rem;margin-bottom:28px}
+ [lang=bn] h1{font-size:8rem}
+ .lead{font-size:1.25rem;max-width:62ch}
+ .pill{padding:12px 28px 12px 14px;margin-bottom:34px}
+ .pill b{font-size:1.35rem}
+ .row svg{width:48px;height:48px}
+ .actions{margin-top:40px}
+ .btn{flex:0 0 280px;min-height:60px;font-size:1.05rem}
+ .card p{font-size:1.05rem}
+ .view{padding-top:88px}
+ .socg{max-width:720px}
+ .ib{height:50px}
+ .card:hover,.soc:hover,.btn:hover{box-shadow:0 14px 30px rgba(56,189,248,.25)}
+}
+/* Large screens */
+@media(min-width:1440px){
+ .bar,main,.view{max-width:1320px}
+ h1{font-size:8.5rem}
+ .grid{gap:28px}
+}
+
+/* ===== Connect With Me: animations ===== */
+#home,#social{transition:opacity .26s ease,transform .26s ease,filter .26s ease}
+#home.lv,#social.lv{opacity:0;transform:translateY(-12px) scale(.98);filter:blur(5px)}
+@keyframes enter{from{opacity:0;transform:translateY(26px) scale(.96);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+body.s #social{animation:enter .6s cubic-bezier(.22,1,.36,1) both;position:relative}
+#social::before{content:'';position:absolute;z-index:-1;top:40px;right:-60px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(56,189,248,.35),transparent 65%);filter:blur(20px);animation:float 7s ease-in-out infinite;pointer-events:none}
+@keyframes float{50%{transform:translate(-30px,40px) scale(1.15)}}
+#social h2{background:linear-gradient(90deg,var(--head),var(--blue),var(--head));background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:flow 4s linear infinite}
+@keyframes flow{to{background-position:-220% 0}}
+#social .ey,#social h2,#social .sub{animation-name:up;animation-duration:.6s;animation-fill-mode:both}
+#social h2{animation:up .6s .08s both,flow 4s linear infinite}
+#social .sub{animation-delay:.16s}
+.soc{position:relative;overflow:hidden;isolation:isolate}
+.soc::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,transparent,rgba(56,189,248,.22),transparent);transform:translateX(-120%);transition:transform .7s ease}
+.soc:hover::before{transform:translateX(120%)}
+.soc:hover{box-shadow:0 14px 34px rgba(56,189,248,.3)}
+#social .soc{animation:slide .8s cubic-bezier(.22,1,.36,1) both}
+#social .soc svg{animation:pop .8s cubic-bezier(.34,1.56,.64,1) .3s both,bob 3.2s ease-in-out 1.2s infinite}
+#social .soc:nth-child(2) svg{animation-delay:.42s,1.5s}#social .soc:nth-child(3) svg{animation-delay:.54s,1.8s}
+@keyframes bob{50%{transform:translateY(-5px)}}
+#social .soc:hover svg{animation:wig .6s ease both}
+@keyframes wig{30%{transform:scale(1.15) rotate(-10deg)}60%{transform:scale(1.15) rotate(8deg)}100%{transform:scale(1.12) rotate(-4deg)}}
+.soc i{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:var(--chip);transition:transform .35s cubic-bezier(.34,1.56,.64,1),background .3s,color .3s}
+.soc:hover i{background:var(--grad);color:#0C4A6E;transform:translateX(6px) scale(1.1)}
+.rp{position:absolute;border-radius:50%;background:rgba(56,189,248,.45);transform:scale(0);animation:rp .7s ease-out forwards;pointer-events:none;z-index:0}
+@keyframes rp{to{transform:scale(1);opacity:0}}
+.pill{animation:up .6s ease both,glow 2.6s ease-in-out 1.2s infinite}
+@keyframes glow{50%{box-shadow:0 10px 36px rgba(56,189,248,.65),0 0 0 8px rgba(56,189,248,.12)}}
+.pill .row svg{animation:bob 2.4s ease-in-out infinite}
+.pill .row svg:nth-child(2){animation-delay:.2s}.pill .row svg:nth-child(3){animation-delay:.4s}
+.pill:hover .row svg{border-color:#fff}
+.pill:hover>:last-child{animation-duration:.7s}
+.back{transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.back:hover{transform:translateX(-4px)}
+.back>:first-child{display:inline-block;transition:transform .3s}.back:hover>:first-child{transform:translateX(-4px)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="yt" viewBox="0 0 24 24"><rect x="1" y="4.5" width="22" height="15" rx="4.5" fill="#F00"/><path d="M10 9l5.2 3-5.2 3z" fill="#fff"/></symbol>
+<symbol id="fb" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path d="M15.1 22v-7.9h2.6l.4-3.1h-3V9.1c0-.9.3-1.5 1.6-1.5h1.6V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H9.5v3.1h2.7V22z" fill="#fff"/></symbol>
+<symbol id="em" viewBox="0 0 24 24"><path fill="#4285F4" d="M2 7.2V18a1.5 1.5 0 0 0 1.5 1.5h3V10.8z"/><path fill="#34A853" d="M22 7.2V18a1.5 1.5 0 0 1-1.5 1.5h-3V10.8z"/><path fill="#FBBC05" d="M17.5 5.6v5.2L22 7.2V6a2 2 0 0 0-3.2-1.6z"/><path fill="#EA4335" d="M6.5 10.8V5.6L12 9.8l5.5-4.2v5.2L12 15z"/><path fill="#C5221F" d="M2 6v1.2l4.5 3.6V5.6L5.2 4.6A2 2 0 0 0 2 6z"/></symbol>
+</defs></svg>
+<header><div class="bar">
+<a class="back" href="#top" data-go="home"><span>←</span><span><span class=e>Back to Home</span><span class=b>হোমে ফিরুন</span></span></a>
+<button class="ib" id="lang" onclick="L()">বাংলা</button><button class="ib" id="theme" onclick="Th()">☾</button>
+</div></header>
+<div id="home"><main id="top">
+<div class="hero">
+<h1><span class=e>Iftekhar
+Chowdhury
+Araf</span><span class=b>ইফতেখার
+চৌধুরী
+আরাফ</span></h1>
+<a class="pill" href="#social" data-go="social"><span class="row"><svg><use href="#yt"/></svg><svg><use href="#fb"/></svg><svg><use href="#em"/></svg></span><span><b><span class=e>Connect With Me</span><span class=b>আমার সাথে
+যুক্ত হোন</span></b><small><span class=e>YouTube · Facebook · Email</span><span class=b>ইউটিউব · ফেসবুক · ইমেইল</span></small></span><span>→</span></a>
+<p class="lead"><span class=e>Welcome to my personal website. I am Iftekhar Chowdhury Araf, a Humanities student at Chouddagram Government College. Alongside my studies, I am interested in technology, website creation, digital services, and learning new things. I aim to build my knowledge and skills and work towards a positive future.</span><span class=b>আমার ব্যক্তিগত ওয়েবসাইটে স্বাগতম। আমি ইফতেখার চৌধুরী আরাফ, চৌদ্দগ্রাম সরকারি কলেজের মানবিক বিভাগের একজন শিক্ষার্থী। পড়াশোনার পাশাপাশি আমি প্রযুক্তি, ওয়েবসাইট তৈরি, ডিজিটাল সেবা এবং নতুন কিছু শেখার প্রতি আগ্রহী। আমি আমার জ্ঞান ও দক্ষতা বাড়িয়ে একটি ইতিবাচক ভবিষ্যতের পথে এগিয়ে যেতে চাই।</span></p>
+<div class="actions"><a class="btn f" href="#about" data-go="about"><span class=e>Discover About Me</span><span class=b>আমার সম্পর্কে জানুন</span></a><button class="btn cp" id="cb" onclick="C()"><span class="ck"><svg viewBox="0 0 24 24" class="i"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="lb n"><span class=e>Copy My Number</span><span class=b>আমার নম্বর কপি করুন</span></span><span class="lb d"><span class=e>Copied!</span><span class=b>কপি হয়েছে!</span></span></button></div>
+</div>
+<section id=about class=alt><span class=ey><span class=e>About Me</span><span class=b>আমার পরিচিতি</span></span><h2><span class=e>About Me</span><span class=b>আমার পরিচিতি</span></h2><p class=sub><span class=e>My introduction, background, and personal interests</span><span class=b>আমার পরিচয়, পটভূমি ও ব্যক্তিগত আগ্রহ</span></p><div class=card><p><span class=e>My name is Iftekhar Chowdhury Araf. I am from the Chauddagram area of Cumilla, Bangladesh. I currently study in the Humanities group at Chouddagram Government College. I enjoy learning new things, using technology, and improving my skills. Website creation, online platforms, digital services, and computer-related topics are among my interests. I believe consistent learning and effort can help me achieve my goals.</span><span class=b>আমার নাম ইফতেখার চৌধুরী আরাফ। আমি বাংলাদেশের কুমিল্লা জেলার চৌদ্দগ্রাম এলাকার বাসিন্দা। আমি বর্তমানে চৌদ্দগ্রাম সরকারি কলেজের মানবিক বিভাগে পড়াশোনা করছি। নতুন কিছু শিখতে, প্রযুক্তি ব্যবহার করতে এবং নিজের দক্ষতা বাড়াতে আমার ভালো লাগে। ওয়েবসাইট তৈরি, অনলাইন প্ল্যাটফর্ম, ডিজিটাল সেবা এবং কম্পিউটার-সংক্রান্ত বিষয় আমার আগ্রহের মধ্যে রয়েছে। আমি বিশ্বাস করি নিয়মিত শেখা ও পরিশ্রম আমাকে লক্ষ্যে পৌঁছাতে সাহায্য করবে।</span></p><div class=tags><span><span class=e>Technology</span><span class=b>প্রযুক্তি</span></span><span><span class=e>Website Creation</span><span class=b>ওয়েবসাইট তৈরি</span></span><span><span class=e>Digital Services</span><span class=b>ডিজিটাল সেবা</span></span><span><span class=e>Learning</span><span class=b>শেখা</span></span><span><span class=e>Humanities</span><span class=b>মানবিক</span></span></div></div></section>
+<section id=education><span class=ey><span class=e>Education</span><span class=b>শিক্ষা</span></span><h2><span class=e>My Education</span><span class=b>আমার শিক্ষা</span></h2><p class=sub><span class=e>My current college and academic background</span><span class=b>আমার বর্তমান কলেজ ও শিক্ষাগত পটভূমি</span></p><div class="grid"><div class="card kv"><small><span class=e>Current Institution</span><span class=b>বর্তমান প্রতিষ্ঠান</span></small><b><span class=e>College</span><span class=b>কলেজ</span></b></div><div class="card kv"><small><span class=e>College</span><span class=b>কলেজ</span></small><b><span class=e>Chouddagram Government College</span><span class=b>চৌদ্দগ্রাম সরকারি কলেজ</span></b></div><div class="card kv"><small><span class=e>Academic Group</span><span class=b>শিক্ষাগত বিভাগ</span></small><b><span class=e>Humanities (Arts)</span><span class=b>মানবিক (কলা)</span></b></div><div class="card kv"><small><span class=e>College Roll</span><span class=b>কলেজ রোল</span></small><b><span class=e>262315</span><span class=b>২৬২৩১৫</span></b></div><div class="card kv"><small><span class=e>Student Status</span><span class=b>শিক্ষার্থীর অবস্থা</span></small><b><span class=e>Higher Secondary Student</span><span class=b>উচ্চ মাধ্যমিকের শিক্ষার্থী</span></b></div><div class="card kv big"><small><span class=e>SSC Batch</span><span class=b>এসএসসি ব্যাচ</span></small><b><span class=e>2026</span><span class=b>২০২৬</span></b></div><div class="card kv big"><small><span class=e>HSC Batch</span><span class=b>এইচএসসি ব্যাচ</span></small><b><span class=e>2028</span><span class=b>২০২৮</span></b></div></div></section>
+<section id=interests class=alt><span class=ey><span class=e>My Interests</span><span class=b>আমার আগ্রহ</span></span><h2><span class=e>What I Am Interested In</span><span class=b>যে বিষয়ে আমি আগ্রহী</span></h2><p class=sub><span class=e>Topics I enjoy exploring and learning</span><span class=b>যেসব বিষয় জানতে ও শিখতে আমার ভালো লাগে</span></p><div class="grid g3"><div class=card><div class=ico><svg class=i viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div><h3><span class=e>Website Creation &amp; Design</span><span class=b>ওয়েবসাইট তৈরি ও ডিজাইন</span></h3><p><span class=e>Learning to create attractive and user-friendly websites using HTML, CSS, and modern web design.</span><span class=b>HTML, CSS এবং আধুনিক ওয়েব ডিজাইন ব্যবহার করে আকর্ষণীয় ও ব্যবহারবান্ধব ওয়েবসাইট তৈরি শিখছি।</span></p></div><div class=card><div class=ico><svg class=i viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM8 20h8M12 16v4"/></svg></div><h3><span class=e>Computers &amp; Technology</span><span class=b>কম্পিউটার ও প্রযুক্তি</span></h3><p><span class=e>Exploring computers, software, mobile technology, and useful digital tools.</span><span class=b>কম্পিউটার, সফটওয়্যার, মোবাইল প্রযুক্তি এবং দরকারি ডিজিটাল টুল সম্পর্কে জানছি।</span></p></div><div class=card><div class=ico><svg class=i viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3><span class=e>Digital Services &amp; Online Platforms</span><span class=b>ডিজিটাল সেবা ও অনলাইন প্ল্যাটফর্ম</span></h3><p><span class=e>Understanding how online services work and how to use digital platforms effectively.</span><span class=b>অনলাইন সেবা কীভাবে কাজ করে এবং ডিজিটাল প্ল্যাটফর্ম কার্যকরভাবে কীভাবে ব্যবহার করতে হয় তা বোঝার চেষ্টা করছি।</span></p></div><div class=card><div class=ico><svg class=i viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div><h3><span class=e>Learning New Skills</span><span class=b>নতুন দক্ষতা শেখা</span></h3><p><span class=e>Continuously learning new things and improving my knowledge and abilities.</span><span class=b>নিয়মিত নতুন কিছু শিখে আমার জ্ঞান ও সক্ষমতা বাড়িয়ে চলেছি।</span></p></div><div class=card><div class=ico><svg class=i viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5zM4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></div><h3><span class=e>Education &amp; General Knowledge</span><span class=b>শিক্ষা ও সাধারণ জ্ঞান</span></h3><p><span class=e>Strengthening my academic foundation and exploring knowledge across different subjects.</span><span class=b>শিক্ষাগত ভিত্তি মজবুত করছি এবং বিভিন্ন বিষয়ের জ্ঞান অন্বেষণ করছি।</span></p></div><div class=card><div class=ico><svg class=i viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></div><h3><span class=e>Personal Development</span><span class=b>ব্যক্তিগত উন্নয়ন</span></h3><p><span class=e>Working to improve time management, responsibility, communication, and problem-solving skills.</span><span class=b>সময় ব্যবস্থাপনা, দায়িত্ববোধ, যোগাযোগ এবং সমস্যা সমাধানের দক্ষতা উন্নত করতে কাজ করছি।</span></p></div></div></section>
+<section id=family><span class=ey><span class=e>My Family</span><span class=b>আমার পরিবার</span></span><h2><span class=e>Family Introduction</span><span class=b>পরিবারের পরিচিতি</span></h2><p class=sub><span class=e>A brief introduction to my family</span><span class=b>আমার পরিবারের সংক্ষিপ্ত পরিচয়</span></p><div class="grid g3"><div class="card kv"><small><span class=e>Father's Name</span><span class=b>পিতার নাম</span></small><b><span class=e>Md Belal Hossain Chowdhury</span><span class=b>মো. বেলাল হোসেন চৌধুরী</span></b></div><div class="card kv"><small><span class=e>Mother's Name</span><span class=b>মাতার নাম</span></small><b><span class=e>Runa Begum</span><span class=b>রুনা বেগম</span></b></div><div class="card kv"><small><span class=e>Brother's Name</span><span class=b>ভাইয়ের নাম</span></small><b><span class=e>Arafat Chowdhury Eyamin</span><span class=b>আরাফাত চৌধুরী ইয়ামিন</span></b></div></div></section>
+<section id=goals class=alt><span class=ey><span class=e>My Goals</span><span class=b>আমার লক্ষ্য</span></span><h2><span class=e>My Future Goals</span><span class=b>আমার ভবিষ্যৎ লক্ষ্য</span></h2><p class=sub><span class=e>What I hope to learn and achieve in the future</span><span class=b>ভবিষ্যতে আমি যা শিখতে ও অর্জন করতে চাই</span></p><div class=card><p><span class=e>My first goal is to continue my studies with dedication and achieve good academic results. Alongside education, I want to build practical skills in technology and web design. In the future, I hope to pursue higher education, gain new knowledge, and use my abilities to contribute positively to my family and society. Learning step by step and improving myself are important parts of my journey.</span><span class=b>আমার প্রথম লক্ষ্য নিষ্ঠার সাথে পড়াশোনা চালিয়ে যাওয়া এবং ভালো ফলাফল অর্জন করা। শিক্ষার পাশাপাশি আমি প্রযুক্তি ও ওয়েব ডিজাইনে ব্যবহারিক দক্ষতা গড়ে তুলতে চাই। ভবিষ্যতে আমি উচ্চশিক্ষা গ্রহণ করে নতুন জ্ঞান অর্জন করতে এবং আমার সক্ষমতা দিয়ে পরিবার ও সমাজে ইতিবাচক অবদান রাখতে চাই। ধাপে ধাপে শেখা এবং নিজেকে উন্নত করাই আমার যাত্রার গুরুত্বপূর্ণ অংশ।</span></p><div class=tags><span><span class=e>Higher Education</span><span class=b>উচ্চশিক্ষা</span></span><span><span class=e>Skill Development</span><span class=b>দক্ষতা উন্নয়ন</span></span><span><span class=e>Learning Technology</span><span class=b>প্রযুক্তি শেখা</span></span><span><span class=e>Positive Contribution</span><span class=b>ইতিবাচক অবদান</span></span></div></div></section>
+<section id=details><span class=ey><span class=e>Personal Details</span><span class=b>ব্যক্তিগত তথ্য</span></span><h2><span class=e>Personal Information</span><span class=b>ব্যক্তিগত তথ্য</span></h2><p class=sub>&nbsp;</p><div class="grid g3"><div class="card kv"><small><span class=e>Full Name</span><span class=b>পূর্ণ নাম</span></small><b><span class=e>Iftekhar Chowdhury Araf</span><span class=b>ইফতেখার চৌধুরী আরাফ</span></b></div><div class="card kv"><small><span class=e>Country</span><span class=b>দেশ</span></small><b><span class=e>Bangladesh</span><span class=b>বাংলাদেশ</span></b></div><div class="card kv"><small><span class=e>District</span><span class=b>জেলা</span></small><b><span class=e>Cumilla</span><span class=b>কুমিল্লা</span></b></div><div class="card kv"><small><span class=e>Upazila</span><span class=b>উপজেলা</span></small><b><span class=e>Chauddagram</span><span class=b>চৌদ্দগ্রাম</span></b></div><div class="card kv"><small><span class=e>Current Status</span><span class=b>বর্তমান অবস্থা</span></small><b><span class=e>Student</span><span class=b>শিক্ষার্থী</span></b></div></div></section>
+</main>
+<footer><span class=e>© Iftekhar Chowdhury Araf</span><span class=b>© ইফতেখার চৌধুরী আরাফ</span></footer></div>
+<main class="view" id="social"><span class=ey><span class=e>Social Links</span><span class=b>সোশ্যাল লিংক</span></span><h2><span class=e>Connect With Me</span><span class=b>আমার সাথে যুক্ত হোন</span></h2><p class=sub><span class=e>Find me on these platforms</span><span class=b>এই প্ল্যাটফর্মগুলোতে আমাকে পাবেন</span></p><div class=socg><a class=soc href="https://www.youtube.com/@arafchowdhury100" target=_blank rel=noopener><svg><use href="#yt"/></svg><span><b>YouTube</b><small><span class=e>Visit my channel</span><span class=b>আমার চ্যানেলে যান</span></small></span><i>→</i></a><a class=soc href="https://www.facebook.com/profile.php?id=61596302692259" target=_blank rel=noopener><svg><use href="#fb"/></svg><span><b><span class=e>Facebook</span><span class=b>ফেসবুক</span></b><small><span class=e>Visit my profile</span><span class=b>আমার প্রোফাইলে যান</span></small></span><i>→</i></a><a class=soc href="mailto:arafc179@gmail.com"><svg><use href="#em"/></svg><span><b><span class=e>Email</span><span class=b>ইমেইল</span></b><small>arafc179@gmail.com</small></span><i>→</i></a></div></main>
+<div id="toast"><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="tt"></span></div>
+<script>
+var d=document.documentElement,$=function(s){return document.querySelector(s)};
+function S(k,v){try{return v?localStorage.setItem(k,v):localStorage.getItem(k)}catch(e){}}
+function L(l){l=typeof l=="string"?l:d.lang=="bn"?"en":"bn";d.lang=l;$("#lang").textContent=l=="bn"?"English":"বাংলা";document.title=l=="bn"?"ইফতেখার চৌধুরী আরাফ":"Iftekhar Chowdhury Araf";S("lang",l)}
+function Th(t){t=typeof t=="string"?t:d.dataset.theme=="dark"?"light":"dark";d.dataset.theme=t;$("#theme").textContent=t=="dark"?"☀":"☾";S("theme2",t)}
+function C(){var n="01815280417",bn=d.lang=="bn",ok=0,b=$("#cb");
+ try{var a=document.createElement("textarea");a.value=n;a.style.cssText="position:fixed;top:0;left:0;opacity:0";document.body.appendChild(a);a.focus();a.select();a.setSelectionRange(0,99);ok=document.execCommand("copy");a.remove()}catch(e){}
+ if(ok)fx(1);else{fx(1);navigator.clipboard&&navigator.clipboard.writeText(n).catch(function(){fx(0)})}
+ function fx(g){var t=$("#toast");$("#tt").textContent=g?bn?"ফোন নম্বর সফলভাবে কপি হয়েছে!":"Phone Number Copied Successfully!":bn?"কপি করা যায়নি।":"Copy failed.";
+  t.style.background=g?"":"#B91C1C";t.classList.remove("show");void t.offsetWidth;t.classList.add("show");clearTimeout(C.t);C.t=setTimeout(function(){t.classList.remove("show")},2400);
+  if(!g)return;b.classList.remove("ok");void b.offsetWidth;b.classList.add("ok");
+  var r=document.createElement("span");r.className="ring";b.appendChild(r);setTimeout(function(){r.remove()},850);
+  var cl=["#22C55E","#38BDF8","#FACC15","#F472B6","#A78BFA","#fff"];
+  for(var i=0;i<26;i++){var p=document.createElement("span"),an=Math.PI*2*i/26+Math.random()*.4,dist=60+Math.random()*70;p.className="cf";p.style.cssText="background:"+cl[i%6]+";--x:"+Math.cos(an)*dist+"px;--y:"+Math.sin(an)*dist+"px;--r:"+(Math.random()*720-360)+"deg;border-radius:"+(i%2?"50%":"2px");b.appendChild(p);setTimeout(function(q){q.remove()}.bind(null,p),950)}
+  clearTimeout(C.b);C.b=setTimeout(function(){b.classList.remove("ok")},2200)}}
+function show(soc,push){var b=document.body;if(b.classList.contains("s")==soc)return;var o=soc?$("#home"):$("#social");o.classList.add("lv");
+ setTimeout(function(){o.classList.remove("lv");b.classList.toggle("s",soc);scrollTo({top:0,behavior:"auto"})},260);
+ if(push)try{history.pushState(null,"",soc?"#social":location.pathname+location.search)}catch(e){}}
+function rip(e,el){var r=el.getBoundingClientRect(),z=Math.max(r.width,r.height)*2.2,p=document.createElement("span");p.className="rp";
+ p.style.cssText="width:"+z+"px;height:"+z+"px;left:"+(e.clientX-r.left-z/2)+"px;top:"+(e.clientY-r.top-z/2)+"px";el.appendChild(p);setTimeout(function(){p.remove()},750)}
+document.addEventListener("click",function(e){
+ var r=e.target.closest(".soc,.pill");if(r)rip(e,r);
+ var g=e.target.closest("[data-go]");
+ if(g){var v=g.dataset.go,el=$("#"+v);e.preventDefault();
+  if(v=="social")show(true,1);else if(v=="home")show(false,1);
+  else{if(document.body.classList.contains("s")){show(false,1);setTimeout(function(){el&&el.scrollIntoView({behavior:"smooth"})},320)}else el&&el.scrollIntoView({behavior:"smooth"})}}
+ var c=e.target.closest(".card");if(c)c.classList.toggle("up")});
+window.addEventListener("popstate",function(){show(location.hash=="#social",0)});
+if(location.hash=="#social")document.body.classList.add("s");
+L("en");Th("dark");
+</script>
+</body>
+</html>
